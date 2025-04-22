@@ -11,8 +11,12 @@
 # 產生了這個程式碼
 # 原始程式碼：https://stackoverflow.com/questions/54139609/using-python-to-create-a-hotkey-that-enters-text
 #
+# v2_202504221540
+# delete unused shift+p in COMBINATIONS
+#
 # v1_202504221530
 # command+’ =>、
+
 
 from pynput import keyboard
 from pynput.keyboard import Key, Controller
@@ -25,8 +29,6 @@ kbd = Controller()
 #        ]
 
 COMBINATIONS = [
-        {keyboard.Key.shift, keyboard.KeyCode(char="p")},
-        {keyboard.Key.shift, keyboard.KeyCode(char="P")},
         {keyboard.Key.cmd, keyboard.KeyCode(char="'")}
         ]
 
